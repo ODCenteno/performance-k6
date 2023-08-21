@@ -1,7 +1,7 @@
 // Captura la información de la petición y guardarla en el text
 import http from 'k6/http';
+import baseURL from "../baseUrl.js";
 
-const baseURL = 'https://fakeapi.platzi.com/';
 
 export default function() {
   let response = http.get(`${baseURL}/api/v1/products`);

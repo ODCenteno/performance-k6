@@ -1,7 +1,6 @@
 import { sleep } from "k6";
 import http from "k6/http";
-
-const baseURL = 'https://fakeapi.platzi.com/';
+import baseURL from "../baseUrl.js";
 
 export const options = {
   stages: [

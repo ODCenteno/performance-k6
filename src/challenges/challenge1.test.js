@@ -1,8 +1,8 @@
 // En los primeros 60s -> 10 vus, mantener 180s
 // En la última etapa, reducir a 0
 import http from "k6/http";
+import baseURL from "../baseUrl.js";
 
-const baseURL = 'https://fakeapi.platzi.com/';
 
 export const options = {
   stages: [{

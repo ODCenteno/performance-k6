@@ -1,5 +1,5 @@
 import http from "k6/http";
-import baseURL from "../baseUrl";
+import baseURL from "../baseUrl.js";
 import { Counter, Gauge } from "k6/metrics";
 
 export const options = {

@@ -1,3 +1,3 @@
-const baseURL = 'https://fakeapi.platzi.com/';
+const baseURL = 'https://api.escuelajs.co/api/v1';
 
 export default baseURL;

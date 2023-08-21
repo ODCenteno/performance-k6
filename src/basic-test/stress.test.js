@@ -1,5 +1,7 @@
 import http from "k6/http";
 import { sleep } from "k6";
+import baseURL from "../baseUrl.js";
+
 
 export const options = {
   stages: [{
@@ -15,8 +17,6 @@ export const options = {
     target: 400
   }
 ]};
-
-const baseURL = 'https://fakeapi.platzi.com/';
 
 export default function() {
   let response = http.get(`${baseURL}/api/v1/products`);

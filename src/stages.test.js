@@ -1,6 +1,6 @@
 import http from "k6/http";
+import baseURL from "../baseUrl.js";
 
-const baseURL = 'https://fakeapi.platzi.com/';
 
 // Definición de la cantidad de virtual users y duración del test
 export const options = {
