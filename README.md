@@ -15,4 +15,26 @@ Set of performance testing scripts for web pages usign Grafana's K6 tool with Ja
 - Soak performance testing
 - Stress performance testing
 
+### Guardar las métricas en un archivo
+
+```bash
+# Corriendo un script con K6 y guardarndo TODAS las métricas en un archivo
+# k6 run --out [archive-type=archive-name.xxx] script.name
+k6 run --our json=load-test.json load.js
+```
+
+### Guardar solo el resumen de los resultados
+
+```bash
+# k6 run --summary-export=archive-name.xxx script.js
+k6 run --summary-export=results.json script.js
+```
+
+## Metric types
+
+- Counter
+- Gauge
+- Rate
+- Trent
+
 ## Build by ODCenteno
